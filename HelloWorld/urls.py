@@ -16,8 +16,10 @@ Including another URLconf
 
 from django.urls import path
 from . import view,testdb,search,search2
+from django.contrib import admin
 
 urlpatterns = [
+    path('admin/',admin.site.urls),
     path('hello/', view.hello),
     path('testdb/', testdb.testdb),
     path('search-form/',search.search_form),
