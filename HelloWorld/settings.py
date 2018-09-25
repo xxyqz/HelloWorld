@@ -77,7 +77,7 @@ WSGI_APPLICATION = 'HelloWorld.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
+        'ENGINE': 'mysql.connector.django',
         'NAME': 'root',
         'USER': 'root',
         'PASSWORD': 'Ecust@651018',
