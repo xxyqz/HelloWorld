@@ -15,7 +15,7 @@ class Contact(models.Model):
 
 
 class Tag(models.Model):
-    contact = models.ForeignKey(Contact)
+    contact = models.ForeignKey(Contact,on_delete=models.CASCADE)
     name = models.CharField(max_length=50)
 
     def __unicode__(self):
