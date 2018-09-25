@@ -15,9 +15,9 @@ Including another URLconf
 """
 
 from django.urls import path
-from . import view
+from . import view,testdb
 
 urlpatterns = [
     path('hello/', view.hello),
-    path('testdb/', view.hello),
+    path('testdb/', testdb.testdb),
 ]
