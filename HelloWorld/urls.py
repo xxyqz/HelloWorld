@@ -18,6 +18,6 @@ from django.urls import path
 from . import view
 
 urlpatterns = [
-    path(r'^hello$', view.hello),
-    path(r'^testdb$', view.hello),
+    path('hello/', view.hello),
+    path('testdb/', view.hello),
 ]
