@@ -15,11 +15,12 @@ Including another URLconf
 """
 
 from django.urls import path
-from . import view,testdb,search
+from . import view,testdb,search,search2
 
 urlpatterns = [
     path('hello/', view.hello),
     path('testdb/', testdb.testdb),
     path('search-form/',search.search_form),
     path('search/', search.search),
+    path('search-post/',search2.search_post),
 ]
